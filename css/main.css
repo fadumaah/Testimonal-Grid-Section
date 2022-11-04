@@ -2,6 +2,10 @@ html {
   font-size: 62.5%;
 }
 
+h1 {
+  display: none;
+}
+
 .author {
   display: flex;
   gap: 1.31em;
@@ -112,4 +116,29 @@ h2 {
 
 h2 {
   margin-bottom: 1.23em;
+}
+
+@media screen and (min-width: 800px) {
+  .testimonal {
+    display: grid;
+    grid-template-areas: "daniel daniel . kira" ". patrick patrick kira";
+  }
+
+  .daniel {
+    grid-area: daniel;
+  }
+  .patrick {
+    grid-area: patrick;
+  }
+  .kira {
+    grid-area: kira;
+  }
+
+  .testimonal section {
+    justify-content: space-between;
+  }
+
+  body {
+    margin-top: 0;
+  }
 }
